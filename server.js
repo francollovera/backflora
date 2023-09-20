@@ -33,8 +33,8 @@ app.post("/create_preference", (req, res) => {
       },
     ],
     back_urls: {
-      success: "https://flora-two.vercel.app",
-      failure: "https://flora-two.vercel.app",
+      success: "https://backflora.vercel.app",
+      failure: "https://backflora.vercel.app",
       pending: "",
     },
     auto_return: "approved",
