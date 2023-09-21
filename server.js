@@ -66,7 +66,7 @@
 
 const express = require("express");
 const app = express();
-const cors = require("cors");
+
 const path = require("path");
 
 const mercadopago = require("mercadopago");
@@ -81,9 +81,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "./")));
 
-app.use(cors({
-  origin: "https://flora-two.vercel.app"
-}));
+
 
 app.get("/", function (req, res) {
   const filePath = path.resolve(__dirname, "carrito.html");
